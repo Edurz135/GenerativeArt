@@ -29,7 +29,7 @@ function setup() {
     createCanvas(innerWidth, innerHeight)
     stroke(0);
     noFill();
-    noLoop();
+    // noLoop();
 }
   
 function draw() {
