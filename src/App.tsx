@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import { RandomWalker } from "./views/pages/randomWalker/randomWalker.page";
 
 function App() {
   return (
-    <div className="App">
-      a
+    <div>
+      <RandomWalker />
     </div>
   );
 }
