@@ -1,32 +1,14 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { P5CanvasInstance, ReactP5Wrapper } from "@p5-wrapper/react";
 
-export const RandomWalker: React.FC = () => {
+export const Template: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
 
-  // Returns random number between -1 and 1
-  function getRandom() {
-    return Math.random() * 2 - 1;
-  }
-
   function sketch(p5: P5CanvasInstance) {
     p5.setup = () => p5.createCanvas(width, width, p5.WEBGL);
-    var posX = 20;
-    var posY = 20;
-    var speed = 10;
-    var onStart = true;
     p5.draw = () => {
-      if (onStart) {
-        p5.background("#DAC0A3");
-        onStart = false;
-      }
-
-      var speedX = getRandom() * speed;
-      var speedY = getRandom() * speed;
-      posX += speedX;
-      posY += speedY;
-      p5.ellipse(posX, posY, 100, 100);
+        
     };
   }
 
