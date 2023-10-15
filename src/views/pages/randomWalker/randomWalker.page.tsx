@@ -18,10 +18,12 @@ export const RandomWalker: React.FC = () => {
     var onStart = true;
     p5.draw = () => {
       if (onStart) {
-        p5.background("#DAC0A3");
+        p5.background("#0F2C59");
         onStart = false;
       }
 
+      p5.stroke("#0F2C59")
+      p5.fill("#F8F0E5")
       var speedX = getRandom() * speed;
       var speedY = getRandom() * speed;
       posX += speedX;
